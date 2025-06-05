@@ -2,8 +2,8 @@ app = "dental-diagnostic-system-main"
 primary_region = "fra"
 
 [build]
-  # Use the python buildpack explicitly
-  buildpacks = ["paketo-buildpacks/python"]
+  builder = "paketobuildpacks/builder:base"
+
 
 [env]
   PORT = "8080"
