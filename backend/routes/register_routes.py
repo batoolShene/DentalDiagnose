@@ -3,7 +3,7 @@ from models.user_model import User
 
 register_bp = Blueprint('register', __name__)
 
-@register_bp.route('/api/register', methods=['POST'])
+@register_bp.route('', methods=['POST'])
 def register_user():
     try:
         data = request.get_json()
